@@ -85,7 +85,7 @@ public class GestionTransacciones {
             return;
         }
 
-        StringBuilder lista = new StringBuilder("lista de Transacciones \n");
+        StringBuilder lista = new StringBuilder("Lista de Transacciones \n");
         for (Transaccion t : transacciones){
             lista.append("Monto: $").append(t.getMonto())
                     .append("Fecha: ").append(t.getFecha())
@@ -110,7 +110,7 @@ public class GestionTransacciones {
                 case "Eliminar Transacción":
                     eliminarTransaccion();
                     break;
-                case "Mostrar Transacción":
+                case "Mostrar Transacciones":
                     mostrarTransacciones();
                     break;
             }
